@@ -2,22 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nojekyll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/footer/__copyright/footer__copyright.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/footer/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/header/__line/header__line.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/header/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/main/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/page/page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/fonts/Inter-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/fonts/Inter-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/fonts/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__description/element__description.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__image/element__image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__title/element__title.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__vector-like/element__vector-like.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/element.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/elements/elements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__avatar/profile__avatar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__description/profile__description.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__info/profile__info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__main/profile__main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__name/profile__name.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__vector-plus/profile__vector-plus.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__vector/profile__vector.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Vector.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Vector_like.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/kirill-pershin-dombay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/kirill-pershin-elbrus1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/kirill-pershin-karachaevsk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/vector_plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/fonts/Inter-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/fonts/Inter-Bold.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/footer/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/main/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/page/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/page/page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts/fonts.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../how-to-learn" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -81,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603701157976</updated>
-      <workItem from="1603701160795" duration="12849000" />
+      <workItem from="1603701160795" duration="39026000" />
     </task>
     <servers />
   </component>
@@ -101,10 +119,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="517" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603804314892" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603803832849">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1604339956792">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603803832849" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604339956792" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604082794873">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604082794873" />
     <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1604053185589">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

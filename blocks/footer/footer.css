@@ -1,4 +1,9 @@
 .footer{
-  width: calc(100% - 200px*2);
   margin: 60px auto;
+  width: calc(100% - 200px*2);
+}
+@media screen and (max-width: 768px){
+  .footer{
+    width: calc(100% - 19px*2);
+  }
 }
