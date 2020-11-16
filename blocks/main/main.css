@@ -1,12 +1,12 @@
-.main{
+.main {
   display: flex;
   flex: 1;
   flex-direction: column;
   margin: 0 auto;
-  width: calc(100% - 200px*2);
+  width: calc(100% - 200px * 2);
 }
-@media screen and (max-width: 768px){
-  .main{
-    width: calc(100% - 19px*2);
+@media screen and (max-width: 768px) {
+  .main {
+    width: calc(100% - 19px * 2);
   }
 }

@@ -1,9 +1,9 @@
-.profile__info{
+.profile__info {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 1024px){
-  .profile__info{
+@media screen and (max-width: 1024px) {
+  .profile__info {
     margin-top: 22px;
   }
 }

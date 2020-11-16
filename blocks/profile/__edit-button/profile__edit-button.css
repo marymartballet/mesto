@@ -1,11 +1,14 @@
-.profile__edit-button{
+.profile__edit-button {
+  background-image : url("../../../images/Vector.png");
+  background-color:rgba(0, 0, 0, 1);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 24px;
   height: 24px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 18px;
-  vertical-align: text-bottom;
+}
+.profile__edit-button:hover{
+  opacity: 0.8;
 }
