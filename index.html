@@ -8,8 +8,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <img src="images/logo.png" alt="логотип" class="header__logo" />
-      <div class="header__line"></div>
+      <img src="images/logo.svg" alt="логотип" class="header__logo" />
     </header>
     <main class="main">
       <section class="profile">
@@ -31,35 +30,35 @@
           />
           <div class="element__description">
             <p class="element__title">Карачаевск</p>
-            <img src="images/Vector_like.png" class="element__vector-like" alt="фото"/>
+            <button type="button" class="element__vector-like"></button>
           </div>
         </div>
         <div class="element">
           <img src="images/kirill-pershin-elbrus1.jpg" class="element__image" alt="фото" />
           <div class="element__description">
             <p class="element__title">Гора Эльбрус</p>
-            <img src="images/Vector_like.png" class="element__vector-like" alt="фото"/>
+            <button type="button" class="element__vector-like"></button>
           </div>
         </div>
         <div class="element">
           <img src="images/kirill-pershin-dombay.jpg" class="element__image" alt="фото"/>
           <div class="element__description">
             <p class="element__title">Домбай</p>
-            <img src="images/Vector_like.png" class="element__vector-like" alt="фото"/>
+            <button type="button" class="element__vector-like"></button>
           </div>
         </div>
         <div class="element">
           <img src="images/kirill-pershin-elbrus1.jpg" class="element__image" alt="фото"/>
           <div class="element__description">
             <p class="element__title">Гора Эльбрус</p>
-            <img src="images/Vector_like.png" class="element__vector-like" alt="фото"/>
+            <button type="button" class="element__vector-like"></button>
           </div>
         </div>
         <div class="element">
           <img src="images/kirill-pershin-dombay.jpg" class="element__image" alt="фото"/>
           <div class="element__description">
             <p class="element__title">Домбай</p>
-            <img src="images/Vector_like.png" class="element__vector-like" alt="фото"/>
+            <button type="button" class="element__vector-like"></button>
           </div>
         </div>
         <div class="element">
@@ -69,7 +68,7 @@
           />
           <div class="element__description">
             <p class="element__title">Карачаево-Черкессия</p>
-            <img src="images/Vector_like.png" class="element__vector-like" alt="фото"/>
+            <button type="button" class="element__vector-like"></button>
           </div>
         </div>
       </section>
@@ -80,10 +79,10 @@
   <section class="popup">
     <div class="popup__content">
       <button type="button" class="popup__close"></button>
-      <form class="popup__form">
+      <form class="popup__form" name="form">
         <h3 class="popup__title">Редактировать профиль</h3>
-        <input type="text" class="popup__input popup__input_type_name">
-        <input type="text" class="popup__input popup__input_type_info">
+        <input type="text" name="name" class="popup__input popup__input_type_name">
+        <input type="text" name="info" class="popup__input popup__input_type_info">
         <button type="submit" class="popup__submit">Сохранить</button>
       </form>
     </div>

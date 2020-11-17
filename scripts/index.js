@@ -12,11 +12,12 @@ function showPopup() {
 function closePopup() {
   popup.classList.remove("popup_opened");
 }
-editButton.addEventListener("click", showPopup);
-popupClose.addEventListener("click", closePopup);
 function submitForm(event) {
   event.preventDefault();
   title.textContent = nameField.value;
   subtitle.textContent = infoField.value;
+  closePopup();
 }
+editButton.addEventListener("click", showPopup);
+popupClose.addEventListener("click", closePopup);
 form.addEventListener("submit", submitForm);
