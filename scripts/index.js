@@ -8,6 +8,8 @@ let nameField = document.querySelector(".popup__input_type_name");
 let infoField = document.querySelector(".popup__input_type_info");
 function showPopup() {
   popup.classList.add("popup_opened");
+  nameField.value = title.textContent;
+  infoField.value = subtitle.textContent;
 }
 function closePopup() {
   popup.classList.remove("popup_opened");
