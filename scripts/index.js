@@ -30,24 +30,24 @@ const initialCards = [
       "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg",
   },
 ];
-let popup = document.querySelector(".popup");
-let editButton = document.querySelector(".profile__edit-button");
-let popupClose = document.querySelector(".popup__close");
-let title = document.querySelector(".profile__name");
-let subtitle = document.querySelector(".profile__description");
-let form = document.querySelector(".popup__form");
-let nameField = document.querySelector(".popup__input_type_name");
-let infoField = document.querySelector(".popup__input_type_info");
-let addButton = document.querySelector(".profile__add-button");
-let popupAdd = document.querySelector(".popup__add");
-let popupAddClose = document.querySelector(".popup__close_add");
-let popupAddTitle = document.querySelector(".popup__input_add-title");
-let popupAddLink = document.querySelector(".popup__input_add-link");
-let formAdd = document.querySelector(".popup__form_add");
-let imagePopup = document.querySelector(".image-popup");
-let imgClose = document.querySelector(".popup__close_img");
+const popup = document.querySelector(".popup");
+const editButton = document.querySelector(".profile__edit-button");
+const popupClose = document.querySelector(".popup__close");
+const title = document.querySelector(".profile__name");
+const subtitle = document.querySelector(".profile__description");
+const form = document.querySelector(".popup__form");
+const nameField = document.querySelector(".popup__input_type_name");
+const infoField = document.querySelector(".popup__input_type_info");
+const addButton = document.querySelector(".profile__add-button");
+const popupAdd = document.querySelector(".popup_add");
+const popupAddClose = document.querySelector(".popup__close_add");
+const popupAddTitle = document.querySelector(".popup__input_add-title");
+const popupAddLink = document.querySelector(".popup__input_add-link");
+const formAdd = document.querySelector(".popup__form_add");
+const imagePopup = document.querySelector(".image-popup");
+const imgClose = document.querySelector(".popup__close_img");
+const cardSection = document.querySelector(".elements");
 
-let cardSection = document.querySelector(".elements");
 const createElements = (cardData) => {
   const cardContainer = document.createElement("div");
   cardContainer.classList.add("element");
