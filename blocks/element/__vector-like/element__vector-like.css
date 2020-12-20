@@ -6,6 +6,7 @@
   cursor: pointer;
   border: none;
   background-color: #FFFFFF;
+  background-repeat: no-repeat;
 }
 .element__vector-like:hover{
   opacity: 0.6;
