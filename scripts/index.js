@@ -45,7 +45,7 @@ let popupAddTitle = document.querySelector(".popup__input_add-title");
 let popupAddLink = document.querySelector(".popup__input_add-link");
 let formAdd = document.querySelector(".popup__form_add");
 let imagePopup = document.querySelector(".image-popup");
-let imgClose = document.querySelector(".popup_close_img");
+let imgClose = document.querySelector(".popup__close_img");
 
 let cardSection = document.querySelector(".elements");
 const createElements = (cardData) => {
