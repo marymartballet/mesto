@@ -27,6 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,7 @@
       <workItem from="1604407600474" duration="9170000" />
       <workItem from="1605513806885" duration="36062000" />
       <workItem from="1608324926729" duration="36632000" />
-      <workItem from="1608830086288" duration="1625000" />
+      <workItem from="1608830086288" duration="2111000" />
     </task>
     <task id="LOCAL-00001" summary="Закончена основная верстка. Доделать попап,эфеекты при наведении,и лайки">
       <created>1604340328842</created>
@@ -180,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608830839227</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Исправлены замечания ревьюера2">
+      <created>1608997907400</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608997907400</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +228,8 @@
     <MESSAGE value="добавлен шрифт" />
     <MESSAGE value="Работа на проверку" />
     <MESSAGE value="Исправлены замечания ревьюера" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправлены замечания ревьюера" />
+    <MESSAGE value="Исправлены замечания ревьюера2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлены замечания ревьюера2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="202" key="#Web_Browsers" timestamp="1603803820537">
@@ -235,10 +244,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="517" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603804314892" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1608830838679">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1608997905001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608830838679" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608997905001" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604082794873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -291,10 +300,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1604407119847" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1605532290426">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1609012436689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605532290426" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609012436689" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608830855241">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
