@@ -45,46 +45,40 @@ const popupAddClose = document.querySelector(".popup__close_add");
 const popupAddTitle = document.querySelector(".popup__input_add-title");
 const popupAddLink = document.querySelector(".popup__input_add-link");
 const formAdd = document.querySelector(".popup__form_add");
-const imagePopup = document.querySelector(".image-popup");
+const imagePopup = document.querySelector(".popup__image");
 const imgClose = document.querySelector(".popup__close_img");
 const cardSection = document.querySelector(".elements");
 
-const createElements = (cardData, clickLike, deleteCard, openImage) => {
+const createElements = (name, link) => {
   const cardTemplate = document.querySelector("#card");
   const cardElement = cardTemplate.content.cloneNode(true);
   const image = cardElement.querySelector(".element__image");
   const title = cardElement.querySelector(".element__title");
   const likeButton = cardElement.querySelector(".element__vector-like");
   const deleteButton = cardElement.querySelector(".element__delete");
-  image.setAttribute("src", `${cardData.link}`);
-  title.textContent = cardData.name;
-  likeButton.onclick = function (likeButton) {
-    clickLike(likeButton);
-  };
+  image.setAttribute("src", `${link}`);
+  title.textContent = name;
 
-  deleteButton.onclick = function (deleteButton) {
-    deleteCard(deleteButton);
-  };
-
-  image.onclick = function (image) {
-    openImage(image);
-  };
+  likeButton.addEventListener('click', (event) => {
+    clickLike(event);
+  });
+  deleteButton.addEventListener('click', (event) => {
+    deleteCard(event);
+  });
+  image.addEventListener('click', () => {
+    openImage(name, link);
+  });
 
   return cardElement;
 };
 
 initialCards.forEach(function (card) {
-  const result = createElements(card, clickLike, deleteCard, openImage);
+  const result = createElements(card.name, card.link);
   cardSection.appendChild(result);
 });
 
 function showPopup(tag) {
   tag.classList.add("popup_opened");
-  const checkEdit = tag.getAttribute("id");
-  if (checkEdit) {
-    nameField.value = title.textContent;
-    infoField.value = subtitle.textContent;
-  }
 }
 
 function closePopup(tag) {
@@ -102,36 +96,28 @@ function submitAdd(event) {
   event.preventDefault();
   const pictureTitle = popupAddTitle.value;
   const pictureLink = popupAddLink.value;
-  const resultCard = createElements(
-    { name: pictureTitle, link: pictureLink },
-    clickLike,
-    deleteCard,
-    openImage
-  );
+  const resultCard = createElements(pictureTitle, pictureLink);
   cardSection.prepend(resultCard);
   formAdd.reset();
   closePopup(popupAdd);
 }
 
-function clickLike(tag) {
-  tag.target.classList.toggle("element_vector-like_active");
+function clickLike(event) {
+  event.target.classList.toggle("element_vector-like_active");
 }
 
-function deleteCard(tag) {
-  const container = tag.target.closest(".element");
+function deleteCard(event) {
+  const container = event.target.closest(".element");
   cardSection.removeChild(container);
 }
 
-function openImage(tag) {
-  const container = tag.target.closest(".element");
-  const res = container.querySelector(".element__title").textContent;
-  showPopup(imagePopup);
-  const imgSrc = tag.target.src;
-  const imgWindow = document.querySelector(".image-popup__image");
-  imgWindow.src = imgSrc;
-  imgWindow.setAttribute("alt", "фото");
+function openImage(name, link) {
   const descriptionImg = document.querySelector(".image-popup__description");
-  descriptionImg.textContent = res;
+  const imgWindow = document.querySelector(".image-popup__image");
+  showPopup(imagePopup);
+  imgWindow.src = link;
+  imgWindow.setAttribute("alt", "фото");
+  descriptionImg.textContent = name;
 }
 
 addButton.addEventListener("click", function () {
@@ -141,6 +127,8 @@ popupAddClose.addEventListener("click", function () {
   closePopup(popupAdd);
 });
 editButton.addEventListener("click", function () {
+  nameField.value = title.textContent;
+  infoField.value = subtitle.textContent;
   showPopup(popup);
 });
 popupClose.addEventListener("click", function () {
