@@ -25,8 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="Исправлены замечания ревьюера3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="Названия по Бэм">
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__image/_description/popup__image_description.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__image/_description/popup__image_description.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +46,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../how-to-learn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\ivani\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="run.prettier.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -88,6 +89,7 @@
       <workItem from="1605513806885" duration="36062000" />
       <workItem from="1608324926729" duration="36632000" />
       <workItem from="1608830086288" duration="2111000" />
+      <workItem from="1612878242217" duration="480000" />
     </task>
     <task id="LOCAL-00001" summary="Закончена основная верстка. Доделать попап,эфеекты при наведении,и лайки">
       <created>1604340328842</created>
@@ -194,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612877246764</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Названия по Бэм">
+      <created>1612878376559</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1612878376559</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +245,7 @@
     <MESSAGE value="Исправлены замечания ревьюера" />
     <MESSAGE value="Исправлены замечания ревьюера2" />
     <MESSAGE value="Исправлены замечания ревьюера3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправлены замечания ревьюера3" />
+    <MESSAGE value="Названия по Бэм" />
+    <option name="LAST_COMMIT_MESSAGE" value="Названия по Бэм" />
   </component>
 </project>
