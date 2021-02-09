@@ -25,17 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__image/_container/popup__image_container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__image/_description/popup__image_description.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__image/_opened/popup__image_opened.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__image/_picture/popup__image_picture.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__image/popup__image.css" afterDir="false" />
+    <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="Исправлены замечания ревьюера3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__description/profile__description.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__description/profile__description.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__name/profile__name.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__name/profile__name.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608997907400</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Исправлены замечания ревьюера3">
+      <created>1612877246764</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1612877246764</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,92 +235,7 @@
     <MESSAGE value="Работа на проверку" />
     <MESSAGE value="Исправлены замечания ревьюера" />
     <MESSAGE value="Исправлены замечания ревьюера2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправлены замечания ревьюера2" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="570" y="202" key="#Web_Browsers" timestamp="1603803820537">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="570" y="202" key="#Web_Browsers/0.0.1536.824@0.0.1536.824" timestamp="1603803820537" />
-    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604408594619">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604408594619" />
-    <state x="517" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603804314892">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="517" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603804314892" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1608997905001">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608997905001" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604082794873">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604082794873" />
-    <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1604407119828">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604407119828" />
-    <state width="1515" height="261" key="GridCell.Tab.0.center" timestamp="1604407119828">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604407119828" />
-    <state width="1515" height="261" key="GridCell.Tab.0.left" timestamp="1604407119827">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604407119827" />
-    <state width="1515" height="261" key="GridCell.Tab.0.right" timestamp="1604407119828">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604407119828" />
-    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1604407119830">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604407119830" />
-    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1604407119829">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604407119829" />
-    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1604407119829">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604407119829" />
-    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1604407119830">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604407119830" />
-    <state width="1515" height="261" key="GridCell.Tab.2.bottom" timestamp="1604407119848">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604407119848" />
-    <state width="1515" height="261" key="GridCell.Tab.2.center" timestamp="1604407119847">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1604407119847" />
-    <state width="1515" height="261" key="GridCell.Tab.2.left" timestamp="1604407119847">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1604407119847" />
-    <state width="1515" height="261" key="GridCell.Tab.2.right" timestamp="1604407119847">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1604407119847" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1609012436689">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609012436689" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608830855241">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608830855241" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1603803390793">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603803390793" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608830456996">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608830456996" />
+    <MESSAGE value="Исправлены замечания ревьюера3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлены замечания ревьюера3" />
   </component>
 </project>
