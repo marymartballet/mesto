@@ -112,8 +112,8 @@ function deleteCard(event) {
 }
 
 function openImage(name, link) {
-  const descriptionImg = document.querySelector(".container__description");
-  const imgWindow = document.querySelector(".container__image");
+  const descriptionImg = document.querySelector(".popup__description");
+  const imgWindow = document.querySelector(".popup__picture");
   showPopup(imagePopup);
   imgWindow.src = link;
   imgWindow.setAttribute("alt", "фото");
