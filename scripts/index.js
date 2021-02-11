@@ -45,7 +45,7 @@ const popupAddClose = document.querySelector(".popup__close_add");
 const popupAddTitle = document.querySelector(".popup__input_add-title");
 const popupAddLink = document.querySelector(".popup__input_add-link");
 const formAdd = document.querySelector(".popup__form_add");
-const imagePopup = document.querySelector(".popup__image");
+const imagePopup = document.querySelector(".popup_image");
 const imgClose = document.querySelector(".popup__close_img");
 const cardSection = document.querySelector(".elements");
 
@@ -112,8 +112,8 @@ function deleteCard(event) {
 }
 
 function openImage(name, link) {
-  const descriptionImg = document.querySelector(".popup__image_description");
-  const imgWindow = document.querySelector(".popup__image_image");
+  const descriptionImg = document.querySelector(".container__description");
+  const imgWindow = document.querySelector(".container__image");
   showPopup(imagePopup);
   imgWindow.src = link;
   imgWindow.setAttribute("alt", "фото");
