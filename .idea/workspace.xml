@@ -25,10 +25,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="БЭМ2">
+    <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="исправления">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_02_2021,_15_04_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_02_2021__15_04__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/__container/__description/container__description.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/__container/__image/container__image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/__container/popup__container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/_image/popup_image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__description/popup__description.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__picture/popup__picture.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/_image/popup_image.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613071049584</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="исправления">
+      <created>1613128009991</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1613128009991</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +276,7 @@
     <MESSAGE value="Исправлены замечания ревьюера" />
     <MESSAGE value="Исправлены замечания ревьюера2" />
     <MESSAGE value="БЭМ2" />
-    <option name="LAST_COMMIT_MESSAGE" value="БЭМ2" />
+    <MESSAGE value="исправления" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправления" />
   </component>
 </project>
