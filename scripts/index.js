@@ -31,9 +31,9 @@ const initialCards = [
   },
 ];
 
-const popup = document.querySelector(".popup");
+const profilePopup = document.querySelector("#edit");
 const editButton = document.querySelector(".profile__edit-button");
-const popupClose = document.querySelector(".popup__close");
+const popupClose = profilePopup.querySelector(".popup__close");
 const title = document.querySelector(".profile__name");
 const subtitle = document.querySelector(".profile__description");
 const form = document.querySelector(".popup__form");
@@ -48,6 +48,8 @@ const formAdd = document.querySelector(".popup__form_add");
 const imagePopup = document.querySelector(".popup_image");
 const imgClose = document.querySelector(".popup__close_img");
 const cardSection = document.querySelector(".elements");
+const descriptionImg = document.querySelector(".popup__description");
+const imgWindow = document.querySelector(".popup__picture");
 
 const createElements = (name, link) => {
   const cardTemplate = document.querySelector("#card");
@@ -89,7 +91,7 @@ function submitForm(event) {
   event.preventDefault();
   title.textContent = nameField.value;
   subtitle.textContent = infoField.value;
-  closePopup(popup);
+  closePopup(profilePopup);
 }
 
 function submitAdd(event) {
@@ -112,14 +114,11 @@ function deleteCard(event) {
 }
 
 function openImage(name, link) {
-  const descriptionImg = document.querySelector(".popup__description");
-  const imgWindow = document.querySelector(".popup__picture");
   showPopup(imagePopup);
   imgWindow.src = link;
-  imgWindow.setAttribute("alt", "фото");
+  imgWindow.setAttribute("alt", `${name}`);
   descriptionImg.textContent = name;
 }
-
 addButton.addEventListener("click", function () {
   showPopup(popupAdd);
 });
@@ -129,10 +128,10 @@ popupAddClose.addEventListener("click", function () {
 editButton.addEventListener("click", function () {
   nameField.value = title.textContent;
   infoField.value = subtitle.textContent;
-  showPopup(popup);
+  showPopup(profilePopup);
 });
 popupClose.addEventListener("click", function () {
-  closePopup(popup);
+  closePopup(profilePopup);
 });
 imgClose.addEventListener("click", function () {
   closePopup(imagePopup);
