@@ -25,26 +25,33 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="исправления">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_02_2021,_15_04_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_02_2021__15_04__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/__container/__description/container__description.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/__container/__image/container__image.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/__container/popup__container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/_image/popup_image.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__description/popup__description.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__picture/popup__picture.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/_image/popup_image.css" afterDir="false" />
+    <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="валидация формы(спринт 6)">
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__input/_text-error/popup__input_text-error.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__submit/_inactive/popup__submit_inactive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_02_2021,_15_04_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_02_2021__15_04__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/__container/__description/container__description.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/__container/__image/container__image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/__container/popup__container.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/_image/popup_image.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/_error/popup__input_error.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__description/popup__description.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__description/popup__description.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,11 +65,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../how-to-learn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\ivani\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="run.prettier.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -71,6 +77,8 @@
       <recent name="D:\Development\Masha\mesto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blocks/popup/__container" />
+      <recent name="$PROJECT_DIR$/blocks/popup" />
       <recent name="$PROJECT_DIR$/blocks/popup/__description" />
       <recent name="$PROJECT_DIR$/blocks/popup/__picture" />
     </key>
@@ -85,7 +93,7 @@
       <recentPaths value="$PROJECT_DIR$" />
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+  <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" uri="http://localhost:63342/mesto/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -95,11 +103,6 @@
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/index.js/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.index.html (1)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -114,6 +117,8 @@
       <workItem from="1605513806885" duration="36062000" />
       <workItem from="1608324926729" duration="36632000" />
       <workItem from="1608830086288" duration="2111000" />
+      <workItem from="1613291433475" duration="661000" />
+      <workItem from="1614332355416" duration="2249000" />
     </task>
     <task id="LOCAL-00001" summary="Закончена основная верстка. Доделать попап,эфеекты при наведении,и лайки">
       <created>1604340328842</created>
@@ -277,6 +282,7 @@
     <MESSAGE value="Исправлены замечания ревьюера2" />
     <MESSAGE value="БЭМ2" />
     <MESSAGE value="исправления" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправления" />
+    <MESSAGE value="валидация формы(спринт 6)" />
+    <option name="LAST_COMMIT_MESSAGE" value="валидация формы(спринт 6)" />
   </component>
 </project>
