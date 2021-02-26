@@ -7,17 +7,13 @@ const validationConfig = {
   inactiveButtonClass: 'popup__submit_inactive',
 }
 
-const toggleButtonState = (inputList, buttonList, options) => {
+const toggleButtonState = (inputList, buttonElement, options) => {
   if (hasInvalidInput(inputList)) {
-    buttonList.forEach((button) => {
-      button.classList.add(options.inactiveButtonClass);
-      button.setAttribute('disabled', 'true');
-    })
+    buttonElement.classList.add(options.inactiveButtonClass);
+    buttonElement.setAttribute('disabled', 'true');
   } else {
-    buttonList.forEach((button) => {
-      button.classList.remove(options.inactiveButtonClass);
-      button.removeAttribute('disabled');
-    })
+    buttonElement.classList.remove(options.inactiveButtonClass);
+    buttonElement.removeAttribute('disabled');
   }
 }
 
@@ -51,11 +47,11 @@ const checkInputValidity = (formElement, inputElement, options) => {
 
 const setEventListener = (formElement, options) => {
   const inputList = Array.from(formElement.querySelectorAll(options.inputSelector));
-  const buttonList = Array.from(formElement.querySelectorAll(options.submitButtonSelector))
+  const buttonElement = formElement.querySelector(options.submitButtonSelector);
   inputList.forEach((inputElement) => {
     inputElement.addEventListener('input', function () {
       checkInputValidity(formElement, inputElement, options);
-      toggleButtonState(inputList, buttonList, options);
+      toggleButtonState(inputList, buttonElement, options);
     })
   })
 }
