@@ -56,22 +56,14 @@ function closePopupMousedown(event) {
   }
 }
 
-function closePopupEsc(event, tag) {
-  const openPopup = document.querySelector('.popup_opened');
+function closePopupEsc(event) {
   if (event.key === "Escape") {
+    const openPopup = document.querySelector('.popup_opened');
     closePopup(openPopup);
   }
 }
 
 function showPopup(tag) {
-  const titleValid = titleInput.validity.valid;
-  const urlValid = urlInput.validity.valid;
-
-  if (!titleValid || !urlValid) {
-    submitButton.setAttribute('disabled', 'true');
-    submitButton.classList.add('popup__submit_inactive');
-  }
-
   tag.classList.add("popup_opened");
 
   document.addEventListener("keyup", closePopupEsc);
@@ -97,9 +89,12 @@ function submitAdd(event) {
   const pictureTitle = popupAddTitle.value;
   const pictureLink = popupAddLink.value;
   const resultCard = createElements(pictureTitle, pictureLink);
+  const inactiveClass = validationConfig.inactiveButtonClass;
 
   cardSection.prepend(resultCard);
   formAdd.reset();
+  submitButton.setAttribute('disabled', 'true');
+  submitButton.classList.add(inactiveClass);
   closePopup(popupAdd);
 }
 
@@ -118,6 +113,7 @@ function openImage(name, link) {
   imgWindow.setAttribute("alt", `${name}`);
   descriptionImg.textContent = name;
 }
+
 addButton.addEventListener("click", function () {
   showPopup(popupAdd);
 });

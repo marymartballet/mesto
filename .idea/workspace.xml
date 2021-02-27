@@ -27,7 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="валидация формы(спринт 6)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,7 @@
       <workItem from="1608324926729" duration="36632000" />
       <workItem from="1608830086288" duration="2111000" />
       <workItem from="1613291433475" duration="661000" />
-      <workItem from="1614332355416" duration="5303000" />
+      <workItem from="1614332355416" duration="7325000" />
     </task>
     <task id="LOCAL-00001" summary="Закончена основная верстка. Доделать попап,эфеекты при наведении,и лайки">
       <created>1604340328842</created>
@@ -249,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614365626829</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="валидация формы(спринт 6)">
+      <created>1614365908677</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614365908677</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
