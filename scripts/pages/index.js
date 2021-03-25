@@ -23,7 +23,7 @@ const submitButton = document.querySelector("#create-button");
 const cardSection = document.querySelector(".elements");
 
 initialCards.forEach(function (card) {
-  const cardTemplate = new Card(card, "#card");
+  const cardTemplate = new Card(card, "#card", showPopup);
   const result = cardTemplate.setTemplate();
   cardSection.appendChild(result);
 });
@@ -71,7 +71,6 @@ function submitAdd(event) {
   event.preventDefault();
   const name = popupAddTitle.value;
   const link = popupAddLink.value;
-  console.log([{ name, link }]);
   const resultCard = new Card({ name, link }, "#card");
   const inactiveClass = validationConfig.inactiveButtonClass;
 

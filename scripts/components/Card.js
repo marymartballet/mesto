@@ -1,8 +1,9 @@
 export default class Card {
-  constructor(data, cardSelector) {
+  constructor(data, cardSelector, showPopup) {
     this._data = data;
     this._cardSelector = cardSelector;
     this._element = null;
+    this._showPopup = showPopup;
   }
   _getTemplate() {
     const cardTemplate = document
@@ -30,9 +31,6 @@ export default class Card {
     const cardSection = document.querySelector(".elements");
 
     cardSection.removeChild(container);
-  }
-  _showPopup(tag) {
-    tag.classList.add("popup_opened");
   }
 
   _openImage(name, link) {
