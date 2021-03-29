@@ -21,7 +21,6 @@ const imagePopup = document.querySelector(".popup_image");
 const imgClose = document.querySelector(".popup__close_img");
 const submitButton = document.querySelector("#create-button");
 const cardSection = document.querySelector(".elements");
-
 initialCards.forEach(function (card) {
   const cardTemplate = new Card(card, "#card", showPopup);
   const result = cardTemplate.setTemplate();
@@ -59,7 +58,6 @@ function closePopup(tag) {
   document.removeEventListener("keyup", closePopupEsc);
   document.removeEventListener("mousedown", closePopupMousedown);
 }
-
 function submitForm(event) {
   event.preventDefault();
   title.textContent = nameField.value;
@@ -71,7 +69,7 @@ function submitAdd(event) {
   event.preventDefault();
   const name = popupAddTitle.value;
   const link = popupAddLink.value;
-  const resultCard = new Card({ name, link }, "#card");
+  const resultCard = new Card({ name, link }, "#card", showPopup);
   const inactiveClass = validationConfig.inactiveButtonClass;
 
   cardSection.prepend(resultCard.setTemplate());

@@ -32,7 +32,6 @@ export default class Card {
 
     cardSection.removeChild(container);
   }
-
   _openImage(name, link) {
     const imagePopup = document.querySelector(".popup_image");
     const imgWindow = document.querySelector(".popup__picture");
