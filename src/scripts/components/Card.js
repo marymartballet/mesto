@@ -1,9 +1,11 @@
+import PopupWithImage from "./PopupWithImage.js";
+
 export default class Card {
-  constructor(data, cardSelector, showPopup) {
+  constructor(data, cardSelector, handleCardClick) {
     this._data = data;
+    this._imageOpen = handleCardClick;
     this._cardSelector = cardSelector;
     this._element = null;
-    this._showPopup = showPopup;
   }
   _getTemplate() {
     const cardTemplate = document
@@ -19,8 +21,8 @@ export default class Card {
     deleteButton.addEventListener("click", (event) => {
       this._deleteCard(event);
     });
-    image.addEventListener("click", () => {
-      this._openImage(this._data.name, this._data.link);
+    image.addEventListener("click", (event) => {
+      this._imageOpen(this._data);
     });
   }
   _clickLike(event) {
@@ -32,16 +34,7 @@ export default class Card {
 
     cardSection.removeChild(container);
   }
-  _openImage(name, link) {
-    const imagePopup = document.querySelector(".popup_image");
-    const imgWindow = document.querySelector(".popup__picture");
-    const descriptionImg = document.querySelector(".popup__description");
 
-    this._showPopup(imagePopup);
-    imgWindow.src = link;
-    imgWindow.alt = name;
-    descriptionImg.textContent = name;
-  }
   setTemplate() {
     this._element = this._getTemplate();
     const likeButton = this._element.querySelector(".element__vector-like");

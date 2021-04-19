@@ -26,13 +26,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3256221e-dfae-494d-a17f-f76e28adb1f2" name="Default Changelist" comment="проектная работа 7">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_03_2021,_21_21_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/components/Popup1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/components/Section.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -41,6 +50,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1jPMDkyYn3d8QD2rDwTfG6ixFwg" />
   <component name="ProjectViewState">
@@ -54,7 +66,7 @@
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\ivani\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -98,6 +110,8 @@
       <workItem from="1605513806885" duration="35601000" />
       <workItem from="1616350839776" duration="17515000" />
       <workItem from="1617003259280" duration="605000" />
+      <workItem from="1617810410421" duration="13158000" />
+      <workItem from="1618139264170" duration="2856000" />
     </task>
     <task id="LOCAL-00001" summary="Закончена основная верстка. Доделать попап,эфеекты при наведении,и лайки">
       <created>1604340328842</created>
