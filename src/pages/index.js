@@ -1,11 +1,12 @@
 import "./index.css";
 
-import Card from "../scripts/components/Card.js";
 import FormValidator from "../scripts/components/FormValidator.js";
 import Section from "../scripts/components/Section.js";
 import PopupWithImage from "../scripts/components/PopupWithImage.js";
 import PopupWithFrom from "../scripts/components/PopupWithForm.js";
 import UserInfo from "../scripts/components/UserInfo.js";
+
+import { createCard } from "../scripts/utils/utils";
 
 import {
   initialCards,
@@ -25,36 +26,34 @@ import {
   imgClose,
   submitButton,
   cardSection,
+  userInfoConfig,
 } from "../scripts/utils/constants.js";
 
-const userInfo = new UserInfo({
-  userNameSelector: ".profile__name",
-  userDescriptionSelector: ".profile__description",
-});
+const userInfo = new UserInfo(userInfoConfig);
 const defaultCardSection = new Section(
   {
     data: initialCards,
     renderer: (card) => {
-      const cardTemplate = new Card(card, "#card", popupImage.open);
+      const cardTemplate = createCard(card, "#card", popupImage.open);
       const result = cardTemplate.setTemplate();
       defaultCardSection.addItem(result);
     },
   },
   cardSelector
 );
-const formValid = new FormValidator(validationConfig, form);
-const formAddValid = new FormValidator(validationConfig, formAdd);
+const editProfileFormValidator = new FormValidator(validationConfig, form);
+const addCardFormValidator = new FormValidator(validationConfig, formAdd);
 const popupImage = new PopupWithImage(imagePopup);
-const popupForm = new PopupWithFrom(profilePopup, (event) => {
+const popupEditProfile = new PopupWithFrom(profilePopup, (event) => {
   event.preventDefault();
   userInfo.setUserInfo(nameField.value, infoField.value);
-  popupForm.close();
+  popupEditProfile.close();
 });
 const popupAddForm = new PopupWithFrom(popupAdd, (event) => {
   event.preventDefault();
   const name = popupAddTitle.value;
   const link = popupAddLink.value;
-  const resultCard = new Card({ name, link }, "#card", popupImage.open);
+  const resultCard = createCard({ name, link }, "#card", popupImage.open);
   const inactiveClass = validationConfig.inactiveButtonClass;
 
   cardSection.prepend(resultCard.setTemplate());
@@ -64,18 +63,20 @@ const popupAddForm = new PopupWithFrom(popupAdd, (event) => {
 });
 
 addButton.addEventListener("click", function () {
+  addCardFormValidator.checkForm();
   popupAddForm.open();
 });
 editButton.addEventListener("click", function () {
   const currentUserInfo = userInfo.getUserInfo();
   nameField.value = currentUserInfo.name;
   infoField.value = currentUserInfo.description;
-  popupForm.open();
+  editProfileFormValidator.checkForm();
+  popupEditProfile.open();
 });
 imgClose.addEventListener("click", function () {
   popupImage.close();
 });
 
-formValid.enableValidation();
-formAddValid.enableValidation();
+editProfileFormValidator.enableValidation();
+addCardFormValidator.enableValidation();
 defaultCardSection.renderItems();

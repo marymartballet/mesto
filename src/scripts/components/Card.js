@@ -30,9 +30,8 @@ export default class Card {
   }
   _deleteCard(event) {
     const container = event.target.closest(".element");
-    const cardSection = document.querySelector(".elements");
 
-    cardSection.removeChild(container);
+    container.remove();
   }
 
   setTemplate() {

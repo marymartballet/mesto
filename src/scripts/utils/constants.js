@@ -41,6 +41,10 @@ const validationConfig = {
   errorClass: "popup__input_text-error",
   inactiveButtonClass: "popup__submit_inactive",
 };
+const userInfoConfig = {
+  userNameSelector: ".profile__name",
+  userDescriptionSelector: ".profile__description",
+};
 
 //Селекторы
 const cardSelector = ".elements";
@@ -83,4 +87,5 @@ export {
   imgClose,
   submitButton,
   cardSection,
+  userInfoConfig,
 };
