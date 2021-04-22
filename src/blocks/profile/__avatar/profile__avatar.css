@@ -1,11 +1,12 @@
 .profile__avatar {
+  position: relative;
   border-radius: 120px;
   max-width: 120px;
   max-height: 120px;
   margin: 0 30px 0 0;
 }
-@media screen and (max-width: 1024px){
-  .profile__avatar{
+@media screen and (max-width: 1024px) {
+  .profile__avatar {
     margin: 0;
   }
 }

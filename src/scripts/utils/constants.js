@@ -44,23 +44,29 @@ const validationConfig = {
 const userInfoConfig = {
   userNameSelector: ".profile__name",
   userDescriptionSelector: ".profile__description",
+  userAvatarSelector: ".profile__avatar",
 };
 
 //Селекторы
-const cardSelector = ".elements";
 const imagePopup = document.querySelector(".popup_image");
 const profilePopup = document.querySelector("#edit");
 const popupAdd = document.querySelector(".popup_add");
+const popupConfirmDeleteSelector = document.querySelector(".popup_delete");
+const cardConfig = "#card";
+const cardSelector = ".elements";
 
 //Формы
 const formAdd = document.querySelector(".popup__form_add");
 const form = document.querySelector(".popup__form");
+const popupAvatarForm = document.querySelector(".popup__form_avatar");
+const popupAvatarSelector = document.querySelector(".popup_avatar");
 
 //Константы для слушателей
 const editButton = document.querySelector(".profile__edit-button");
 const addButton = document.querySelector(".profile__add-button");
 const imgClose = document.querySelector(".popup__close_img");
 const submitButton = document.querySelector("#create-button");
+const updateAvatarButton = document.querySelector(".profile__avatar-button");
 
 //Вспомогательные константы
 const nameField = document.querySelector(".popup__input_type_name");
@@ -88,4 +94,9 @@ export {
   submitButton,
   cardSection,
   userInfoConfig,
+  cardConfig,
+  popupAvatarForm,
+  popupAvatarSelector,
+  popupConfirmDeleteSelector,
+  updateAvatarButton,
 };

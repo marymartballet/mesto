@@ -42,3 +42,6 @@
 @import url(../blocks/popup/__input/_text-error/popup__input_text-error.css);
 @import url(../blocks/popup/__input/_error/popup__input_error.css);
 @import url(../blocks/popup/__submit/_inactive/popup__submit_inactive.css);
+@import url(../blocks/profile/__avatar-button/profile__avatar-button.css);
+@import url(../blocks/element/__counter/element__counter.css);
+@import url(../blocks/popup/__box/popup__box.css);

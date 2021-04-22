@@ -20,6 +20,7 @@
           alt="аватар"
           class="profile__avatar"
         />
+        <button class="profile__avatar-button"></button>
         <div class="profile__main">
           <div class="profile__info">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
@@ -37,10 +38,11 @@
     <template id="card">
       <div class="element">
         <img class="element__image" src="#" alt="фото" />
-        <button class="element__delete"></button>
         <div class="element__description">
           <p class="element__title"></p>
-          <button type="button" class="element__vector-like"></button>
+          <button type="button" class="element__vector-like">
+            <p class="element__counter">0</p>
+          </button>
         </div>
       </div>
     </template>
@@ -121,6 +123,37 @@
         <img alt="Картинка" src="#" class="popup__picture" />
         <button class="popup__close popup__close_img"></button>
         <p class="popup__description"></p>
+      </div>
+    </section>
+    <section class="popup popup_avatar">
+      <div class="popup__content">
+        <form
+          class="popup__form popup__form_avatar"
+          name="avatar-form"
+          novalidate
+        >
+          <button class="popup__close" type="button"></button>
+          <h2 class="popup__title">Обновить аватар</h2>
+          <input
+            class="popup__input popup__input_avatar"
+            name="avatar"
+            type="url"
+            placeholder="Ссылка на фото"
+            autocomplete="off"
+            required
+          />
+          <span class="popup__error"></span>
+          <button class="popup__submit">Сохранить</button>
+        </form>
+      </div>
+    </section>
+    <section class="popup popup_delete">
+      <div class="popup__content">
+        <div class="popup__box">
+          <button class="popup__close" type="button"></button>
+          <h2 class="popup__title">Вы уверены?</h2>
+          <button class="popup__submit">Да</button>
+        </div>
       </div>
     </section>
   </body>
