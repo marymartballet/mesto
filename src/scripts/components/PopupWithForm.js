@@ -28,34 +28,15 @@ export default class PopupWithForm extends Popup {
 
   _setEventListeners() {
     super._setEventListeners();
-    this._form.addEventListener("submit", this._handleSubmit);
+    if (this._form) {
+      this._form.addEventListener("submit", this._handleSubmit);
+    }
   }
 
   _removeEventListeners() {
     super._removeEventListeners();
-    this._form.removeEventListener("submit", this._handleSubmit);
-  }
-
-  close() {
-    this._form.reset();
-    super.close();
-  }
-
-  renderLoading(isLoading) {
-    if (isLoading) {
-      this._submitButton.textContent = this._buttonLoadingText;
-    } else {
-      this._submitButton.textContent = this._buttonText;
+    if (this._form) {
+      this._form.removeEventListener("submit", this._handleSubmit);
     }
-  }
-
-  showResponseError(err) {
-    this._submitButton.textContent = err;
-    this._submitButton.classList.add("popup__button_error");
-  }
-
-  hideResponseError(err) {
-    this.submitButton.textContent = this._buttonText;
-    this._submitButton.classList.remove("popup__button_error");
   }
 }

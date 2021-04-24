@@ -4,7 +4,7 @@ export default class Card {
     cardSelector,
     handleCardClick,
     handlerDeleteButton,
-    handlerLike
+    { handlerLike }
   ) {
     this._data = data;
 
@@ -22,8 +22,6 @@ export default class Card {
     this._alt = data.alt;
 
     this.removeCard - this.removeCard.bind(this);
-    this._setLike = this._setLike.bind(this);
-    this._handlerLike = this._handlerLike.bind(this);
 
     this._element = null;
   }
@@ -36,22 +34,16 @@ export default class Card {
     return cardTemplate;
   }
 
-  _setLike() {
-    this._handlerLike(this.id, this.isLiked)
-      .then((res) => {
-        this.like.classList.toggle("element_vector-like_active");
-        this.isLiked = !this.isLiked;
-        this.likes = res.likes.length;
-        this.cardLikesCounter.textContent = this.likes;
-      })
-      .catch((err) => {
-        console.log(`Что-то пошло не так: ${err}`);
-      });
+  setLike(isLiked, likeCount) {
+    this.isLiked = isLiked;
+    this.likes = likeCount;
+    this.like.classList.toggle("element_vector-like_active");
+    this.cardLikesCounter.textContent = this.likes;
   }
 
   _setListeners(likeButton, image) {
     likeButton.addEventListener("click", (event) => {
-      this._setLike();
+      this._handlerLike(this.id, this.isLiked);
     });
     image.addEventListener("click", (event) => {
       this._imageOpen(this._data);
@@ -59,11 +51,8 @@ export default class Card {
   }
 
   insertRemoveButton() {
-    this._element.insertAdjacentHTML(
-      "afterbegin",
-      '<button class="element__delete"></button>'
-    );
     const removeCardButton = this._element.querySelector(".element__delete");
+    removeCardButton.classList.add("element__delete_active");
     removeCardButton.addEventListener("click", () => {
       this._handlerDeleteButton(this, this.id);
     });

@@ -74,6 +74,7 @@ const infoField = document.querySelector(".popup__input_type_info");
 const popupAddTitle = document.querySelector(".popup__input_add-title");
 const popupAddLink = document.querySelector(".popup__input_add-link");
 const cardSection = document.querySelector(".elements");
+const buttonLoadingText = "Сохранение...";
 
 export {
   initialCards,
@@ -99,4 +100,5 @@ export {
   popupAvatarSelector,
   popupConfirmDeleteSelector,
   updateAvatarButton,
+  buttonLoadingText,
 };

@@ -1,7 +1,29 @@
 import Card from "../components/Card.js";
+import { buttonLoadingText, buttonDeleteText } from "./constants.js";
 
-const createCard = (card, cardSelector, popupImageOpen) => {
-  return new Card(card, cardSelector, popupImageOpen);
+const createCard = (
+  data,
+  cardConfig,
+  popupImageOpen,
+  confirmDeletePopup,
+  toggleLike
+) => {
+  return new Card(
+    data,
+    cardConfig,
+    popupImageOpen,
+    confirmDeletePopup,
+    toggleLike
+  );
 };
 
-export { createCard };
+const renderLoading = (isLoading, classSelector) => {
+  const submitButton = classSelector.querySelector(".popup__submit");
+  if (isLoading) {
+    submitButton.textContent = "Сохранить";
+  } else {
+    submitButton.textContent = buttonLoadingText;
+  }
+};
+
+export { createCard, renderLoading };
