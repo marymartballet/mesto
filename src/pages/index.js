@@ -8,7 +8,11 @@ import PopupWithImage from "../scripts/components/PopupWithImage.js";
 import PopupWithForm from "../scripts/components/PopupWithForm.js";
 import UserInfo from "../scripts/components/UserInfo.js";
 
-import { createCard, renderLoading } from "../scripts/utils/utils.js";
+import {
+  createCard,
+  renderLoading,
+  showResponseError,
+} from "../scripts/utils/utils.js";
 
 import {
   initialCards,
@@ -31,6 +35,10 @@ import {
   popupAvatarSelector,
   popupConfirmDeleteSelector,
   updateAvatarButton,
+  addSubmit,
+  editSubmit,
+  avatarSubmit,
+  deleteSubmit,
 } from "../scripts/utils/constants.js";
 
 const api = new Api({
@@ -70,6 +78,8 @@ const defaultCardSection = new Section(
 );
 const editProfileFormValidator = new FormValidator(validationConfig, form);
 const addCardFormValidator = new FormValidator(validationConfig, formAdd);
+const avatarValidator = new FormValidator(validationConfig, popupAvatarForm);
+
 const popupImage = new PopupWithImage(imagePopup);
 const popupEditProfile = new PopupWithForm(profilePopup, (event, values) => {
   renderLoading(false, profilePopup);
@@ -82,7 +92,7 @@ const popupEditProfile = new PopupWithForm(profilePopup, (event, values) => {
     })
     .catch((err) => {
       console.log(`Что-то пошло не так: ${err}`);
-      popupEditProfile.showResponseError(err);
+      showResponseError(err, editSubmit);
     })
     .finally(() => {
       renderLoading(true, profilePopup);
@@ -99,7 +109,7 @@ const popupAvatar = new PopupWithForm(popupAvatarSelector, (event, values) => {
     })
     .catch((err) => {
       console.log(`Что-то пошло не так: ${err}`);
-      popupAvatar.showResponseError(err);
+      showResponseError(err, avatarSubmit);
     })
     .finally(() => {
       renderLoading(true, popupAvatarSelector);
@@ -144,7 +154,7 @@ const popupAddForm = new PopupWithForm(popupAdd, (event, values) => {
     })
     .catch((err) => {
       console.log(`Что-то пошло не так: ${err}`);
-      popupAddForm.showResponseError(err);
+      showResponseError(err, addSubmit);
     })
     .finally(() => {
       renderLoading(true, popupAdd);
@@ -162,14 +172,13 @@ const confirmDeletePopup = new PopupConfirm(
       })
       .catch((err) => {
         console.log(`Что-то пошло не так: ${err}`);
-        confirmDeletePopup.showResponseError(err);
+        showResponseError(err, deleteSubmit);
       })
       .finally(() => {
         renderLoading(true, popupConfirmDeleteSelector);
       });
   }
 );
-const avatarValidator = new FormValidator(validationConfig, popupAvatarForm);
 
 addButton.addEventListener("click", function () {
   addCardFormValidator.checkForm();

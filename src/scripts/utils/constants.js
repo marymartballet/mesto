@@ -60,6 +60,13 @@ const formAdd = document.querySelector(".popup__form_add");
 const form = document.querySelector(".popup__form");
 const popupAvatarForm = document.querySelector(".popup__form_avatar");
 const popupAvatarSelector = document.querySelector(".popup_avatar");
+const popupDelete = document.querySelector(".popup_delete");
+
+//Сабмиты для вывода ошибок
+const addSubmit = formAdd.querySelector(".popup__submit");
+const editSubmit = form.querySelector(".popup__submit");
+const avatarSubmit = popupAvatarForm.querySelector(".popup__submit");
+const deleteSubmit = popupDelete.querySelector(".popup__submit");
 
 //Константы для слушателей
 const editButton = document.querySelector(".profile__edit-button");
@@ -101,4 +108,8 @@ export {
   popupConfirmDeleteSelector,
   updateAvatarButton,
   buttonLoadingText,
+  addSubmit,
+  editSubmit,
+  avatarSubmit,
+  deleteSubmit,
 };

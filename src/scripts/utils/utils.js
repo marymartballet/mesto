@@ -26,4 +26,9 @@ const renderLoading = (isLoading, classSelector) => {
   }
 };
 
-export { createCard, renderLoading };
+const showResponseError = (err, submitButton) => {
+  submitButton.textContent = err;
+  submitButton.classList.add("popup__button_error");
+};
+
+export { createCard, renderLoading, showResponseError };
