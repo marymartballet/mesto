@@ -38,16 +38,6 @@ export default class Popup {
     );
   }
 
-  showResponseError(err) {
-    this._submitButton.textContent = err;
-    this._submitButton.classList.add("popup__button_error");
-  }
-
-  hideResponseError(err) {
-    this.submitButton.textContent = this._buttonText;
-    this._submitButton.classList.remove("popup__button_error");
-  }
-
   open() {
     this._setEventListeners();
     this._popupElement.classList.add("popup_opened");
@@ -56,8 +46,5 @@ export default class Popup {
   close() {
     this._popupElement.classList.remove("popup_opened");
     this._removeEventListeners();
-    if (this._form) {
-      this._form.reset();
-    }
   }
 }
